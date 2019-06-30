@@ -117,30 +117,7 @@ def scorepredict():
     global features
     scorep = nnet.evaluate(X_test, y_test, verbose=0)
     print(scorep*100, "% Accurate")
-    importances = np.array(nnet.get_weights())
-    features = np.array(features, dtype='str')
-    features = pd.DataFrame(features)
-    # features = features.reshape(-1, 1)
-    # importances = importances.reshape(-1, 1)
-    importances = pd.DataFrame(importances)
-    print(importances)
-    featimport = pd.concat([features, importances],
-                           axis='columns', ignore_index=True)
-    featimport.columns = ['Features', 'Coefficients']
-    # featimport = featimport.sort_values(
-    #     'Coefficients', axis=0, ascending=False, na_position='last')
-    print(featimport)
-    featuresarr = featimport.values[0:10, 0]
-    importancesarr = featimport.values[0:10, 1]
-    plt.figure('Top 10 Features')
-    plt.title("Top 10 Feature Coefiecients, Accuracy at {}%".format(
-        round((scorep*100), 2)))
-    plt.bar(featuresarr, height=importancesarr, color='r')
-    plt.xticks(rotation='vertical')
-    plt.margins(0.1)
-    plt.subplots_adjust(bottom=0.4)
-    plt.show()
-
+    
 
 def output():
     global y_test
@@ -173,7 +150,7 @@ fpredict = path.expanduser(
     r'C:\Users\txz\Dropbox\Python Projects\Machine Learning Modules\sales_data_test.csv')
 filepredict(fpredict)
 predict()
-# scorepredict()
+scorepredict()
 
 if __name__ == "__main__":
     main()
