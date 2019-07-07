@@ -46,7 +46,6 @@ class Window:
         self.frame_tleft.rowconfigure(2, weight=1)
         self.frame_tleft.rowconfigure(3, weight=1)
         self.frame_tleft.rowconfigure(4, weight=1)
-        self.frame_tleft.columnconfigure(0, weight=1)
         self.frame_tleft.columnconfigure(1, weight=1)
 
         # Creates left lower frame
