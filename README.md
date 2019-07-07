@@ -19,5 +19,7 @@ In the future, I would like to include other functions such as decision tree cla
     
 # Files included:
   Neural Network Project with GUI.py - Python code that includes the code for the GUI as well as the generator for a neural network
+  
   sales_data_training.csv - Demo data for video game sales used for training model
+  
   sales_data_test.csv - Demo data for video game same used for analysis and prediction
