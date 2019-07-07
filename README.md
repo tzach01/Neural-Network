@@ -1,4 +1,4 @@
-# Deep-Neural-Network-Generator-Tool
+# Deep Neural Network Generator Tool
 Creating a simple tool that can be used to predict user determined values by generating and running a deep neural network using Keras with a TensorFlow Backend. As this is my first attempt at learning a programming language, I am open to hearing better ways of doing things and new things I should be thinking about.
 
 The intent is for a user to be able to upload any file (currently only a .csv file) with a table of organized data and set the parameters of the deep neural network. The program will be able to complete one hot encoding, avoid multi-colinearity, normalize data, and transform it in a way to be accepted by the Keras and Tensorflow libraries. 
