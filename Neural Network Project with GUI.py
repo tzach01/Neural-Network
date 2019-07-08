@@ -33,7 +33,7 @@ class Window:
         self.frame_header.grid(
             row=0, column=0, columnspan=2, sticky='nsew')
         self.frame_header.config(height=50, width=400)
-        self._hdlabel = ttk.Label(self.frame_header, text='Neural Network Generator', anchor='center', font=('Tahoma', 30))
+        self._hdlabel = ttk.Label(self.frame_header, text='Neural Network Generator', anchor='center', font=('Tahoma', 25))
         self._hdlabel.pack(padx=4, pady=4)
 
         # Creates left middle frame
