@@ -13,7 +13,6 @@ from tkinter import filedialog as fd
 from os import path
 import pandas as pd
 import numpy as np
-from sklearn import linear_model
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import Dense
