@@ -32,14 +32,14 @@ class Window:
         self.frame_header = ttk.Frame(master)
         self.frame_header.grid(
             row=0, column=0, columnspan=2, sticky='nsew')
-        self.frame_header.config(height=50, width=400, relief=RIDGE)
+        self.frame_header.config(height=50, width=400)
         self._hdlabel = ttk.Label(self.frame_header, text='Neural Network Generator', anchor='center', font=('Tahoma', 30))
         self._hdlabel.pack(padx=4, pady=4)
 
         # Creates left middle frame
         self.frame_tleft = ttk.Frame(master)
         self.frame_tleft.grid(row=1, column=0, sticky='nsew')
-        self.frame_tleft.config(height=200, width=200, relief=RIDGE)
+        self.frame_tleft.config(height=200, width=200)
 
         # Confirgures left middle frame to expand when enlarged
         self.frame_tleft.rowconfigure(0, weight=1)
@@ -52,12 +52,12 @@ class Window:
         # Creates left lower frame
         self.frame_bleft = ttk.Frame(master)
         self.frame_bleft.grid(row=2, column=0, sticky='nsew')
-        self.frame_bleft.config(height=200, width=200, relief=RIDGE)
+        self.frame_bleft.config(height=200, width=200)
 
         # Creates frame on right of window
         self.frame_right = ttk.Frame(master)
         self.frame_right.grid(row=1, column=1, rowspan=2, sticky='nsew')
-        self.frame_right.config(height=400, width=200, relief=RIDGE)
+        self.frame_right.config(height=400, width=200)
 
         # Creates label, entry field, and browse button for training
         self._ftlabel = ttk.Label(self.frame_tleft, text='Training File')
