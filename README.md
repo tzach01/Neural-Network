@@ -1,7 +1,7 @@
-# Deep Neural Network Generator Tool
+# Open Source Neural Network Generator Program
 
 # Goal
-Create a tool that can help a user quickly generate and train data models with any dataset they have without having to code themselves.
+Create a free tool that can help a user quickly generate and train data models with any dataset they have without having to code themselves.
 
 # Description
 Creating a simple tool that can be used to predict user determined values by generating and running a deep neural network using Keras with a TensorFlow Backend. As this is my first attempt at learning a programming language, I am open to hearing better ways of doing things and new things I should be thinking about.
